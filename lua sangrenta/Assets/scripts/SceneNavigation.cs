@@ -7,4 +7,9 @@ public class SceneNavigation : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void GoToSettings()
+    {
+        SceneManager.LoadScene("Settings");
+    }
 }
