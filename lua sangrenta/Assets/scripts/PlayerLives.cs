@@ -3,16 +3,26 @@ using UnityEngine;
 public class PlayerLives : MonoBehaviour
 {
     [Header("Sistema de Vidas")]
-    public int maxLives = 3;
-    public int currentLives;
+    public int maxLives = 6;
+    public int currentLives = 0;
+
+    private static bool initialized = false; // garante que inicializa apenas uma vez
 
     void Start()
     {
-        currentLives = maxLives;
+        if (!initialized)
+        {
+            // Se currentLives estiver zerado, inicia com maxLives
+            if (currentLives <= 0)
+                currentLives = maxLives;
+
+            initialized = true;
+        }
+
         Debug.Log("Vidas iniciais: " + currentLives);
     }
 
-    // Ganha uma vida (moeda)
+    // Ganha vida (coletável)
     public void AddLife(int amount = 1)
     {
         currentLives += amount;
@@ -21,7 +31,7 @@ public class PlayerLives : MonoBehaviour
         Debug.Log("Vida ganha! Vidas atuais: " + currentLives);
     }
 
-    // Usa uma vida (quando morre)
+    // Usa vida (morte)
     public bool UseLife()
     {
         if (currentLives > 0)

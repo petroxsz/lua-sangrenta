@@ -8,39 +8,35 @@ public class FadeAndLoad : MonoBehaviour
     public static FadeAndLoad Instance;
 
     public Image fadeImage;
-    public float fadeDuration = 1.5f;
 
     void Awake()
     {
-        if (Instance != null && Instance != this)
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
         {
             Destroy(gameObject);
-            return;
         }
-
-        Instance = this;
-        DontDestroyOnLoad(gameObject);
     }
 
-    void Start()
+    public void FadeToScene(string sceneName, float duration)
     {
-        fadeImage.color = new Color(0, 0, 0, 0);
+        StopAllCoroutines();
+        StartCoroutine(FadeOutAndLoad(sceneName, duration));
     }
 
-    public void FadeToScene(string sceneName)
-    {
-        StartCoroutine(FadeOutAndLoad(sceneName));
-    }
-
-    IEnumerator FadeOutAndLoad(string sceneName)
+    IEnumerator FadeOutAndLoad(string sceneName, float duration)
     {
         float t = 0f;
         Color color = fadeImage.color;
 
-        while (t < fadeDuration)
+        while (t < duration)
         {
             t += Time.unscaledDeltaTime;
-            color.a = Mathf.Lerp(0f, 1f, t / fadeDuration);
+            color.a = Mathf.Lerp(0f, 1f, t / duration);
             fadeImage.color = color;
             yield return null;
         }

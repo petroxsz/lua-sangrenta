@@ -3,11 +3,12 @@ using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
-    [Header("Vida do Lobisomem")]
+    [Header("Vida do Player")]
     public int maxHealth = 100;
     public int currentHealth;
 
     private bool isDead = false;
+    private float lastFadeTime = 1.5f;
 
     void Start()
     {
@@ -15,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
         Debug.Log("Vida inicial: " + currentHealth);
     }
 
+    // DANO NORMAL
     public void TakeDamage(int damage)
     {
         if (isDead) return;
@@ -22,73 +24,70 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
-        // Feedback visual
-        DamageFlash flash = FindObjectOfType<DamageFlash>();
-        if (flash != null) flash.Flash();
-
-        CameraShake shake = FindObjectOfType<CameraShake>();
-        if (shake != null) shake.Shake();
-
-        Debug.Log("Lobisomem tomou dano! Vida atual: " + currentHealth);
-
         if (currentHealth <= 0)
         {
-            Die();
+            Die(1.2f, 1.5f); // morte normal
         }
     }
 
     public void Heal(int amount)
+{
+    if (isDead) return;
+
+    currentHealth += amount;
+    currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+
+    Debug.Log("Player curado! Vida atual: " + currentHealth);
+}
+
+
+    // MORTE INSTANTÂNEA (void, queda)
+    public void DieInstant()
     {
         if (isDead) return;
 
-        currentHealth += amount;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-
-        Debug.Log("Lobisomem se curou! Vida atual: " + currentHealth);
+        currentHealth = 0;
+        Die(0.05f, 0.3f); // tudo rápido
     }
 
-    void Die()
+    // CONTROLE CENTRAL DA MORTE
+    void Die(float delay, float fadeTime)
     {
         isDead = true;
-        Debug.Log("O Lobisomem morreu!");
+        lastFadeTime = fadeTime;
 
         PlayerLives lives = GetComponent<PlayerLives>();
 
         if (lives != null && lives.UseLife())
         {
-            // Ainda tem vidas → respawn
-            Invoke(nameof(Respawn), 1.2f);
+            Invoke(nameof(Respawn), delay);
         }
         else
         {
-            // Sem vidas → Game Over com fade
-            Invoke(nameof(FadeToGameOver), 1.2f);
+            Invoke(nameof(FadeToGameOver), delay);
         }
     }
 
     void Respawn()
-{
-    isDead = false;
-    currentHealth = maxHealth;
-
-    Vector3 respawnPosition = Vector3.zero;
-
-    if (CheckpointManager.Instance != null)
     {
-        respawnPosition = CheckpointManager.Instance.GetCheckpoint();
+        isDead = false;
+        currentHealth = maxHealth;
+
+        Vector3 respawnPos = Vector3.zero;
+
+        if (CheckpointManager.Instance != null)
+        {
+            respawnPos = CheckpointManager.Instance.GetCheckpoint();
+        }
+
+        transform.position = respawnPos;
     }
-
-    transform.position = respawnPosition;
-
-    Debug.Log("Respawn no checkpoint!");
-}
-
 
     void FadeToGameOver()
     {
         if (FadeAndLoad.Instance != null)
         {
-            FadeAndLoad.Instance.FadeToScene("GameOver");
+            FadeAndLoad.Instance.FadeToScene("GameOver", lastFadeTime);
         }
         else
         {
