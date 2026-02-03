@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -40,10 +42,13 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void Die()
-    {
-        isDead = true;
-        Debug.Log("O Lobisomem morreu!");
+{
+    if (isDead) return;
 
-        
-    }
+    isDead = true;
+    Debug.Log("O Lobisomem morreu!");
+
+    SceneManager.LoadScene("GameOver");
+}
+
 }
