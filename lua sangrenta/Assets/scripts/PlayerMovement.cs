@@ -28,33 +28,31 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        
+        // Movimento horizontal (A/D ou ←/→)
         moveInput = Input.GetAxisRaw("Horizontal");
 
-        
+        // Correr
         currentSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
 
-        
+        // Checagem de chão
         isGrounded = Physics2D.OverlapCircle(
             groundCheck.position,
             groundCheckRadius,
             groundLayer
         );
 
-        
-        if (Input.GetKeyDown(KeyCode.W) && isGrounded)
+        // Pulo (W ou ↑)
+        if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded)
         {
             float finalJumpForce = jumpForce;
 
             if (Input.GetKey(KeyCode.LeftShift))
-            {
                 finalJumpForce *= runJumpMultiplier;
-            }
 
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, finalJumpForce);
         }
 
-        
+        // Flip do sprite
         if (moveInput > 0)
             sprite.flipX = false;
         else if (moveInput < 0)
@@ -66,7 +64,6 @@ public class PlayerMovement : MonoBehaviour
         rb.linearVelocity = new Vector2(moveInput * currentSpeed, rb.linearVelocity.y);
     }
 
-    
     void OnDrawGizmosSelected()
     {
         if (groundCheck == null) return;
