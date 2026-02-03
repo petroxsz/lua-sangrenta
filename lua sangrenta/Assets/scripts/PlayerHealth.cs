@@ -1,7 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class PlayerHealth : MonoBehaviour
 {
     [Header("Vida do Lobisomem")]
@@ -23,6 +22,13 @@ public class PlayerHealth : MonoBehaviour
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
 
+        // Feedback visual
+        DamageFlash flash = FindObjectOfType<DamageFlash>();
+        if (flash != null) flash.Flash();
+
+        CameraShake shake = FindObjectOfType<CameraShake>();
+        if (shake != null) shake.Shake();
+
         Debug.Log("Lobisomem tomou dano! Vida atual: " + currentHealth);
 
         if (currentHealth <= 0)
@@ -42,13 +48,44 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void Die()
-{
-    if (isDead) return;
+    {
+        isDead = true;
+        Debug.Log("O Lobisomem morreu!");
 
-    isDead = true;
-    Debug.Log("O Lobisomem morreu!");
+        PlayerLives lives = GetComponent<PlayerLives>();
 
-    SceneManager.LoadScene("GameOver");
-}
+        if (lives != null && lives.UseLife())
+        {
+            // Ainda tem vidas → respawn
+            Invoke(nameof(Respawn), 1.2f);
+        }
+        else
+        {
+            // Sem vidas → Game Over com fade
+            Invoke(nameof(FadeToGameOver), 1.2f);
+        }
+    }
 
+    void Respawn()
+    {
+        isDead = false;
+        currentHealth = maxHealth;
+
+        Debug.Log("Respawn realizado!");
+
+        // Respawn temporário (depois entra checkpoint)
+        transform.position = Vector3.zero;
+    }
+
+    void FadeToGameOver()
+    {
+        if (FadeAndLoad.Instance != null)
+        {
+            FadeAndLoad.Instance.FadeToScene("GameOver");
+        }
+        else
+        {
+            SceneManager.LoadScene("GameOver");
+        }
+    }
 }
