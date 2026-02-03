@@ -67,15 +67,22 @@ public class PlayerHealth : MonoBehaviour
     }
 
     void Respawn()
+{
+    isDead = false;
+    currentHealth = maxHealth;
+
+    Vector3 respawnPosition = Vector3.zero;
+
+    if (CheckpointManager.Instance != null)
     {
-        isDead = false;
-        currentHealth = maxHealth;
-
-        Debug.Log("Respawn realizado!");
-
-        // Respawn temporário (depois entra checkpoint)
-        transform.position = Vector3.zero;
+        respawnPosition = CheckpointManager.Instance.GetCheckpoint();
     }
+
+    transform.position = respawnPosition;
+
+    Debug.Log("Respawn no checkpoint!");
+}
+
 
     void FadeToGameOver()
     {
