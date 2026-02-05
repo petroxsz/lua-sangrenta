@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -9,26 +11,42 @@ public class PlayerHealth : MonoBehaviour
 
     private bool isDead = false;
     private float lastFadeTime = 1.5f;
+    private DamageFlash damageFlash;
+    
+
 
     void Start()
-    {
-        currentHealth = maxHealth;
-        Debug.Log("Vida inicial: " + currentHealth);
-    }
+{
+    currentHealth = maxHealth;
+
+    damageFlash = FindFirstObjectByType<DamageFlash>();
+}
 
     // DANO NORMAL
     public void TakeDamage(int damage)
+{
+    if (isDead) return;
+
+    currentHealth -= damage;
+    currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
+
+    // CAMERA SHAKE
+    CameraFollow cam = Camera.main.GetComponent<CameraFollow>();
+    if (cam != null)
+        cam.Shake();
+
+    // FLASH VERMELHO
+    if (damageFlash != null)
+        damageFlash.Flash();
+
+    if (currentHealth <= 0)
     {
-        if (isDead) return;
-
-        currentHealth -= damage;
-        currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
-
-        if (currentHealth <= 0)
-        {
-            Die(1.2f, 1.5f); // morte normal
-        }
+        Die(1.2f, 1.5f);
     }
+}
+
+
+
 
     public void Heal(int amount)
 {
