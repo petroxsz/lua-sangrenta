@@ -8,7 +8,8 @@ public class TimeCoin : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            TimeManager tm = FindObjectOfType<TimeManager>();
+            TimeManager tm = FindAnyObjectByType<TimeManager>();
+
 
             if (tm != null)
             {

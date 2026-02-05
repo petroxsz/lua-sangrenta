@@ -15,24 +15,30 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     private SpriteRenderer sprite;
+    private Animator anim;
 
     private float moveInput;
     private float currentSpeed;
     private bool isGrounded;
+    private bool isDead = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sprite = GetComponent<SpriteRenderer>();
+        anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        // Movimento horizontal (A/D ou ←/→)
+        if (isDead) return;
+
+        // Movimento horizontal
         moveInput = Input.GetAxisRaw("Horizontal");
 
-        // Correr
-        currentSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : walkSpeed;
+        // Corrida
+        bool isRunning = Input.GetKey(KeyCode.LeftShift);
+        currentSpeed = isRunning ? runSpeed : walkSpeed;
 
         // Checagem de chão
         isGrounded = Physics2D.OverlapCircle(
@@ -41,15 +47,28 @@ public class PlayerMovement : MonoBehaviour
             groundLayer
         );
 
-        // Pulo (W ou ↑)
+        // ---------------- ANIMAÇÕES ----------------
+
+        // Andando / Idle
+        anim.SetBool("andando", moveInput != 0);
+        anim.SetBool("correndo", isRunning && moveInput != 0);
+
+        // Pulo
         if ((Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded)
         {
             float finalJumpForce = jumpForce;
 
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (isRunning)
                 finalJumpForce *= runJumpMultiplier;
 
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, finalJumpForce);
+            anim.SetTrigger("pulou");
+        }
+
+        // Ataque
+        if (Input.GetMouseButtonDown(0))
+        {
+            anim.SetTrigger("atacou");
         }
 
         // Flip do sprite
@@ -61,7 +80,19 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (isDead) return;
+
         rb.linearVelocity = new Vector2(moveInput * currentSpeed, rb.linearVelocity.y);
+    }
+
+    // ☠️ MORTE (chame isso de outro script quando perder todas as vidas)
+    public void Die()
+    {
+        if (isDead) return;
+
+        isDead = true;
+        rb.linearVelocity = Vector2.zero;
+        anim.SetTrigger("morreu");
     }
 
     void OnDrawGizmosSelected()
