@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      andano10_0: 212597019344742647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
