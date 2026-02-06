@@ -15,6 +15,10 @@ public class LifeCollectable : MonoBehaviour
                 lives.AddLife(lifeAmount);
             }
 
+            // SOM DE COLETA
+            if (AudioManagerStingers.instance != null)
+                AudioManagerStingers.instance.PlayPickup();
+
             Destroy(gameObject);
         }
     }

@@ -10,11 +10,14 @@ public class TimeCoin : MonoBehaviour
         {
             TimeManager tm = FindAnyObjectByType<TimeManager>();
 
-
             if (tm != null)
             {
                 tm.AddTime(timeValue);
             }
+
+            // SOM DE COLETA
+            if (AudioManagerStingers.instance != null)
+                AudioManagerStingers.instance.PlayPickup();
 
             Destroy(gameObject);
         }
