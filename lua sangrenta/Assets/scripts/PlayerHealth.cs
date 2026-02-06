@@ -24,6 +24,7 @@ public class PlayerHealth : MonoBehaviour
 
     // DANO NORMAL
     public void TakeDamage(int damage)
+    
 {
     if (isDead) return;
 
@@ -43,6 +44,19 @@ public class PlayerHealth : MonoBehaviour
     {
         Die(1.2f, 1.5f);
     }
+
+    if (damageFlash != null)
+    damageFlash.Flash();
+
+// STINGER DE DANO
+if (AudioManagerStingers.instance != null)
+    AudioManagerStingers.instance.PlayHit();
+
+if (currentHealth <= 0)
+{
+    Die(1.2f, 1.5f);
+}
+
 }
 
 
