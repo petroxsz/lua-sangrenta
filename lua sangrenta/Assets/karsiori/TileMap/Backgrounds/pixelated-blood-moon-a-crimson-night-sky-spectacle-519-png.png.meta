@@ -1,0 +1,917 @@
+fileFormatVersion: 2
+guid: c8ec1f0156d023e4f8ce2ea347cbe79e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6090291374101797667
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_0
+  - first:
+      213: -7463878377806683389
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_1
+  - first:
+      213: -5744226775184480307
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_2
+  - first:
+      213: 2077697777505390698
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_3
+  - first:
+      213: -545506532638975403
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_4
+  - first:
+      213: 651538468741902857
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_5
+  - first:
+      213: -2306927858796834076
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_6
+  - first:
+      213: -80414988269883433
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_7
+  - first:
+      213: -958478625555599826
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_8
+  - first:
+      213: 1045907442533512120
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_9
+  - first:
+      213: 5487881691004381764
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_10
+  - first:
+      213: 5811103514875263833
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_11
+  - first:
+      213: -2732238708990724312
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_12
+  - first:
+      213: -8727477439560390143
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_13
+  - first:
+      213: -6392202825597776685
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_14
+  - first:
+      213: 8309927186082931537
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_15
+  - first:
+      213: 8462373375798465502
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_16
+  - first:
+      213: 4982120404940050642
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_17
+  - first:
+      213: 8901947867308195534
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_18
+  - first:
+      213: 2965216845443473425
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_19
+  - first:
+      213: 5494753629016159552
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_20
+  - first:
+      213: 3469059794462654425
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_21
+  - first:
+      213: 1070541975093077543
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_22
+  - first:
+      213: 3363204190036685745
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_23
+  - first:
+      213: -2797841693911793277
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_24
+  - first:
+      213: -5368813620760211365
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_25
+  - first:
+      213: 6097794669428525997
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_26
+  - first:
+      213: 1480072769728004015
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_27
+  - first:
+      213: 1227201365527742415
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_28
+  - first:
+      213: -2879609020263776470
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_29
+  - first:
+      213: 7588266767069753412
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_30
+  - first:
+      213: -7041852012684458153
+    second: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_0
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 293
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32b96fbacbf058450800000000000000
+      internalID: 6090291374101797667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_1
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 282
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3032d14292afa6890800000000000000
+      internalID: -7463878377806683389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 262
+        width: 25
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc767d3ae286840b0800000000000000
+      internalID: -5744226775184480307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_3
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 279
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a60d3dade1775dc10800000000000000
+      internalID: 2077697777505390698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_4
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 272
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55a1663e2b8fd68f0800000000000000
+      internalID: -545506532638975403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_5
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 266
+        width: 25
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902fcda09caba0900800000000000000
+      internalID: 651538468741902857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_6
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 279
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e256f5c5552cffd0800000000000000
+      internalID: -2306927858796834076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_7
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 77
+        width: 209
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7df6e858efe42eef0800000000000000
+      internalID: -80414988269883433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_8
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 266
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2e24fea4ccc2b2f0800000000000000
+      internalID: -958478625555599826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_9
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 262
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b3b52c074fc38e00800000000000000
+      internalID: 1045907442533512120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_10
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 249
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44aafa9625fd82c40800000000000000
+      internalID: 5487881691004381764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_11
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 221
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95bf925bbdf25a050800000000000000
+      internalID: 5811103514875263833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_12
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 215
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8273905ce53251ad0800000000000000
+      internalID: -2732238708990724312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_13
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 180
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10a64c54285c1e680800000000000000
+      internalID: -8727477439560390143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_14
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 176
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3dc0fffb5655a47a0800000000000000
+      internalID: -6392202825597776685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_15
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 190
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 153a5d37fbac25370800000000000000
+      internalID: 8309927186082931537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_16
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 159
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3d03defb3607570800000000000000
+      internalID: 8462373375798465502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_17
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 136
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d05da4ac1c042540800000000000000
+      internalID: 4982120404940050642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_18
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 135
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece73f7bb621a8b70800000000000000
+      internalID: 8901947867308195534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_19
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 132
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 110a9a2b201962920800000000000000
+      internalID: 2965216845443473425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_20
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 112
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045fbc92059414c40800000000000000
+      internalID: 5494753629016159552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_21
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 111
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df3981d083942030800000000000000
+      internalID: 3469059794462654425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_22
+      rect:
+        serializedVersion: 2
+        x: 295
+        y: 105
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 726619e11445bde00800000000000000
+      internalID: 1070541975093077543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_23
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 67
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b3fd3e44608cae20800000000000000
+      internalID: 3363204190036685745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_24
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 70
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3814c909dc11c29d0800000000000000
+      internalID: -2797841693911793277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_25
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 53
+        width: 21
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b501f4505742e75b0800000000000000
+      internalID: -5368813620760211365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_26
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 60
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dabce80c1f7bf9450800000000000000
+      internalID: 6097794669428525997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_27
+      rect:
+        serializedVersion: 2
+        x: 241
+        y: 60
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafbd51a7564a8410800000000000000
+      internalID: 1480072769728004015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_28
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 74
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7c724d325e70110800000000000000
+      internalID: 1227201365527742415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_29
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 57
+        width: 12
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2fba275ad29908d0800000000000000
+      internalID: -2879609020263776470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_30
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 53
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44038189b60fe4960800000000000000
+      internalID: 7588266767069753412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixelated-blood-moon-a-crimson-night-sky-spectacle-519-png_31
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 47
+        width: 15
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 757c21f57e0564e90800000000000000
+      internalID: -7041852012684458153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

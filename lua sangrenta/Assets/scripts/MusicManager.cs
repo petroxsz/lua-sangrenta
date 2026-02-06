@@ -29,23 +29,25 @@ public class MusicManager : MonoBehaviour
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+{
+    switch (scene.name)
     {
-        switch (scene.name)
-        {
-            case "mainMenu":
-            case "Settings":
-                PlayMusic(menuMusic);
-                break;
+        case "mainMenu":
+        case "Settings":
+        case "GameOver":   
+            PlayMusic(menuMusic);
+            break;
 
-            case "Level1":
-                PlayMusic(phase1Music);
-                break;
+        case "Level1":
+            PlayMusic(phase1Music);
+            break;
 
-            case "FaseFinal":
-                PlayMusic(finalPhaseMusic);
-                break;
-        }
+        case "FaseFinal":
+            PlayMusic(finalPhaseMusic);
+            break;
     }
+}
+
 
     void PlayMusic(AudioClip clip)
     {

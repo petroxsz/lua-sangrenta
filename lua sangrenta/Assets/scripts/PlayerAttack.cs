@@ -3,19 +3,30 @@ using UnityEngine;
 public class PlayerAttack : MonoBehaviour
 {
     public int attackDamage = 10;
+    private Animator animator;
+
+    void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
         {
-            Debug.Log("Ataque do lobisomem");
+            Attack();
         }
+    }
+
+    void Attack()
+    {
+        Debug.Log("Ataque do lobisomem");
+        animator.SetTrigger("atacou");
     }
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Enemy") &&
-            Input.GetKeyDown(KeyCode.Space))
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             HunterHealth hunterHealth =
                 collision.gameObject.GetComponent<HunterHealth>();
